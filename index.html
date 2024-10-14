@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Auto Parts - Order Form</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label, input, textarea, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+</style>
+<body>
+    <h1>Great Auto Parts - Order Form</h1>
+    <form action="#" method="post" id="orderForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
+        <label for="make">Make:</label>
+        <input type="text" id="make" name="make" placeholder="Make" required>
+        
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" placeholder="Model" required>
+        
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" placeholder="Year" min="1900" max="2024" required>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="sparePart">Spare Part:</label>
+        <input type="text" id="sparePart" name="sparePart" placeholder="Enter the spare part you need" required>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter the quantity of the spare part you need" required>
+        
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" placeholder="Enter your comment" rows="5"></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
